@@ -1,0 +1,48 @@
+.header {
+    padding: 3.75rem;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    img {
+        width: 9.375rem;
+        height: 9.375rem;
+        background-color: red;
+    }
+
+    nav {
+        width: 100%;
+        padding: 1.850rem;
+
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            list-style: none;
+        }
+
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 37.5rem;
+    }
+}
+
+
+@media (max-width: 578px) {
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+
+}

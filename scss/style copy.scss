@@ -1,0 +1,106 @@
+@import "./layout/reset";
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/footer";
+
+
+
+/** tienda**/
+.gridsTienda {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  background-color: rgb(0, 0, 0);
+}
+
+.tarjetaTienda {
+  @include tarjeta(flex, column);
+  width: 9.375rem;
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+  border-radius: 15px;
+  font-family: sans-serif;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+
+  img {
+    width: 12.5rem;
+  }
+}
+
+.titulo {
+  font-size: 1.5rem;
+  padding: 10px 10px 0 10px;
+
+}
+
+.cuerpo {
+  padding: 10px;
+  height: 9.375rem;
+
+  .cuerpo img {
+    width: 6.25rem;
+    height: fit-content;
+  }
+
+}
+
+.pie {
+  background: #ddba20;
+  border-radius: 0 0 15px 15px;
+  padding: 10px;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+}
+
+.pie a:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+
+
+@media (max-width: 768px) {
+  .serviceSection {
+    height: 87.5rem;
+  }
+
+  .cardsGrid {
+    background-color: red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(14, 8, 8);
+    height: 50.5rem;
+  }
+
+  .tarjeta {
+    height: 5.375rem;
+    width: 2.25rem;
+  }
+
+  .contactSection {
+    width: max-content;
+    background-color: aqua;
+  }
+}
+
+@media (max-width: 320px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .principalContainer {
+    width: 20rem;
+  }
+}

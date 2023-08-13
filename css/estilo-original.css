@@ -1,0 +1,215 @@
+header {
+  padding: 3.75rem;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; }
+  header img {
+    width: 9.375rem;
+    height: 9.375rem;
+    background-color: red; }
+  header nav {
+    width: 80%;
+    padding: 1.850rem; }
+    header nav ul {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+      list-style: none; }
+      header nav ul a {
+        color: black;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 37.5rem; }
+
+main {
+  background-color: bisque; }
+  main .principalContainer {
+    background-image: url("../assets/images/fruta.webp");
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    max-width: fit-content;
+    height: 500px;
+    display: flex;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.35);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main .principalContainer .container {
+      height: 70%;
+      width: 70%;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 193px 75px 193px 134px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      main .principalContainer .container p {
+        color: black;
+        font-size: 1.5rem;
+        font-weight: 25rem;
+        padding: 80px; }
+      main .principalContainer .container button {
+        background-color: #C3EF47;
+        border-radius: 50px;
+        height: 74px;
+        width: 80%;
+        border: 0;
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.85); }
+        main .principalContainer .container button a {
+          color: #ffffff;
+          font-weight: 400;
+          font-size: 25px;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
+          text-decoration: none; }
+  main section {
+    background-color: #bb8f79;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; }
+    main section h2 {
+      text-align: center; }
+    main section .cardsGrid {
+      display: grid;
+      width: 100%;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: center; }
+      @media (max-width: 768px) {
+        .cardsGrid {
+          display: flex;
+          flex-direction: column;
+          background-color: black;
+        }
+      }
+      main section .cardsGrid .tarjeta {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        border: 1px solid lightgray;
+        box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+        border-radius: 15px;
+        font-family: sans-serif;
+        align-items: center;
+        background-color: white; }
+        main section .cardsGrid .tarjeta .titulo {
+          font-size: 24px;
+          padding: 10px 10px 0 10px; }
+        main section .cardsGrid .tarjeta .cuerpo {
+          padding: 10px; }
+        main section .cardsGrid .tarjeta .cuerpo img {
+          width: 9.375rem; }
+        main section .cardsGrid .tarjeta .pie {
+          background: #ddba20;
+          border-radius: 0 0 15px 15px;
+          padding: 10px;
+          text-align: center; }
+          
+  main .contactSection {
+    background-color: greenyellow;
+    width: 100%;
+    text-align: left;
+    height: 35%; }
+    main .contactSection form {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      main .contactSection form .form input {
+        width: 60%;
+        height: 25px;
+        border-radius: 2px 12px;
+        border: 0;
+        padding-left: 9px;
+        box-shadow: 3px 3px rgba(136, 136, 136, 0.363);
+        margin: 10px; }
+      main .contactSection form .form textarea {
+        width: 60%;
+        border-radius: 2px 12px;
+        border: 0;
+        padding-left: 9px;
+        box-shadow: 3px 3px rgba(136, 136, 136, 0.363);
+        margin: 10px; }
+      main .contactSection form .btnSubmit {
+        background-color: #ddba20;
+        color: white;
+        font-size: 16px;
+        transform: scale(1);
+        transition: 0.5s; }
+      main .contactSection form .btnSubmit:hover {
+        background-color: #b99b13;
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: 0.5s; }
+
+@font-face {
+  font-family: 'fuentecoder';
+  src: url(../assets/font/aesthetic_romance.zip); }
+
+.footer {
+  font-family: 'fuentecoder';
+  text-align: center; }
+
+/** tienda**/
+.gridsTienda {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  background-color: #92b339; }
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+  border-radius: 15px;
+  font-family: sans-serif;
+  align-items: center; }
+  .tarjeta img {
+    width: 200px; }
+
+.titulo {
+  font-size: 24px;
+  padding: 10px 10px 0 10px; }
+
+.cuerpo {
+  padding: 10px; }
+  .cuerpo .cuerpo img {
+    width: 6.25rem;
+    height: fit-content; }
+
+.pie {
+  background: #ddba20;
+  border-radius: 0 0 15px 15px;
+  padding: 10px;
+  text-align: center; }
+
+.pie a {
+  text-decoration: none;
+  color: white; }
+
+.pie a:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1; }
+
+  .bodySeguimiento{
+    height: 70%;
+      width: 70%;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 193px 75px 193px 134px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      
+  .textSeguimiento{
+    background-color: rgb(255, 255, 255);
+    width: 18.75rem;
+    justify-content: right;
+  }
